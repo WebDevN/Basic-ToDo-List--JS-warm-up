@@ -1,0 +1,42 @@
+#div1 {
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+    padding: 30px;
+    border: thick solid darkblue;
+    border-radius: 5%;
+}
+
+#div1 > h1 {
+    flex: auto;
+    font-size: 2em;
+}
+#div1 > input {
+    flex: auto;
+    margin: 10px;
+}
+
+#div3 {
+    margin-top: 30px;
+}
+
+li {
+    font-weight: bold;
+    color: darkblue;
+}
+
+h2 {
+    font-size: 1.5em;
+}
+
+@media (max-width: 600px) {
+    #div1 {
+        flex-direction: column;
+    }
+    #div1 > h1 {
+        font-size: 1.5em;
+    }
+    #div1 > input:nth-last-of-type(1) {
+        width: 70px;
+    }
+}
